@@ -1,0 +1,49 @@
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#/">Remind Me</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li ><a href="#/">Login</a></li>
+          <li class="active"><a href="http://localhost:9000/#!/register">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="">
+  <h2> {{ register.message }}
+    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+      <div >
+        <label>Name</label>
+        <input class = "form-control" type="text" ng-model="register.user.name" name="">
+      </div>
+      <div >
+        <label>Email</label>
+        <input class = "form-control" type="text" ng-model="register.user.email" name="">
+      </div>
+      <div >
+        <label>Password</label>
+        <input  class="form-control" type="password" ng-model="register.user.password" name="">
+      </div>
+      <button class="btn btn-large btn-success" ng-click = "register.registerUser(register.user)">REGISTER</button>
+    </div>
+    
+  
+</div>
+
+<div class="row marketing">
+  
+</div>
