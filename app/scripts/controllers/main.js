@@ -20,7 +20,6 @@ angular.module('vaibhavProjectApp')
     vm.email = '';
     vm.password = '';
     vm.message = '';
-    console.log("WTF");
 
     var login = function(email,password) {
     	var body = {

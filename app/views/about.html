@@ -26,3 +26,31 @@
     </div>
 
     <h3 class="text-center"> WELCOME TO HOME PAGE </h3> 
+
+    <div class ="jumbotron" ng-if="about.isResult">
+      {{about.message}}
+      <br>
+      You'll recieve a mail on given id
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-6 form-group">
+      <div >
+        <label>Event Name</label>
+        <input class = "form-control" type="text" ng-model="about.form.name" name="">
+      </div>
+      <div >
+        <label>Reminding Email</label>
+        <input class = "form-control" type="text" ng-model="about.form.email" name="">
+      </div>
+      <div >
+        <label>Description</label>
+        <input  class="form-control" type="text" ng-model="about.form.description" name="">
+      </div>
+      <div >
+        <label>Date and Time</label>
+        <input class = "form-control" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" type="text" ng-model="about.form.time" >
+      </div>
+      <button class="btn btn-large btn-success" ng-click = "about.submit(about.form)">REGISTER</button>
+    </div>
+
+
